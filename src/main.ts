@@ -1,14 +1,20 @@
 import './assets/main.css'
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { ViteSSG } from 'vite-ssg'
 
 import App from './App.vue'
-import router from './router'
+import WelcomeView from './views/WelcomeView.vue'
+import ContactView from './views/ContactView.vue'
 
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-
-app.mount('#app')
+export const createApp = ViteSSG(App, {
+  routes: [
+    {
+      path: '/',
+      component: WelcomeView
+    },
+    {
+      path: '/contact',
+      component: ContactView
+    }
+  ]
+})

@@ -5,12 +5,17 @@ import LinkedInIcon from '@/components/icons/LinkedInIcon.vue'
 import GithubIcon from '@/components/icons/GithubIcon.vue'
 import illustration from '@/assets/images/illustration.png'
 
-const height = ref(window.innerHeight + 'px')
-const isSliding = ref(window.innerWidth / window.innerHeight < 1920 / 1074)
+const height = ref('100vh')
+const isSliding = ref(false)
 
-window.onresize = () => {
+if (typeof window !== 'undefined') {
   height.value = window.innerHeight + 'px'
   isSliding.value = window.innerWidth / window.innerHeight < 1920 / 1074
+
+  window.onresize = () => {
+    height.value = window.innerHeight + 'px'
+    isSliding.value = window.innerWidth / window.innerHeight < 1920 / 1074
+  }
 }
 </script>
 

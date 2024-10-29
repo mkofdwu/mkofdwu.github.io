@@ -35,7 +35,9 @@ setInterval(updateTimeUntilORD, 1000)
     >
       about me
     </router-link>
-    <a href="https://jiajie-writeups.surge.sh" class="mr-10 max-sm:mr-6 opacity-60">ctf writeups</a>
+    <a href="https://mkofdwu.github.io/ctf-writeups/" class="mr-10 max-sm:mr-6 opacity-60">
+      ctf writeups
+    </a>
     <router-link
       to="/contact"
       class="transition-opacity"
