@@ -39,11 +39,11 @@ setInterval(updateTimeUntilORD, 1000)
       ctf writeups
     </a>
     <router-link
-      to="/contact"
+      to="/links"
       class="transition-opacity"
-      :class="$route.path === '/contact' ? 'opacity-100' : 'opacity-60'"
+      :class="$route.path === '/links' ? 'opacity-100' : 'opacity-60'"
     >
-      contact
+      links
     </router-link>
     <span class="flex-1 text-right opacity-60 max-md:hidden">{{ timeUntilORD }}</span>
   </div>

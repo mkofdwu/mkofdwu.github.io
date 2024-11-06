@@ -28,7 +28,7 @@ if (typeof window !== 'undefined') {
       :class="isSliding ? 'illustration' : 'illustration-static'"
     ></div>
     <div class="flex flex-col items-start absolute left-14 bottom-14 max-sm:left-8 max-sm:bottom-8">
-      <h1 class="mb-5 text-primary">Contact</h1>
+      <h1 class="mb-5 text-primary">My links</h1>
       <a class="group py-2 flex items-center gap-x-6" href="mailto:mkofdwu@gmail.com">
         <MaterialIcon name="mail" class="h-7 transition-opacity group-hover:opacity-0" />
         <div class="relative">

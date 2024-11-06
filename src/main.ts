@@ -4,7 +4,7 @@ import { ViteSSG } from 'vite-ssg'
 
 import App from './App.vue'
 import WelcomeView from './views/WelcomeView.vue'
-import ContactView from './views/ContactView.vue'
+import LinksView from './views/LinksView.vue'
 
 export const createApp = ViteSSG(App, {
   routes: [
@@ -13,8 +13,8 @@ export const createApp = ViteSSG(App, {
       component: WelcomeView
     },
     {
-      path: '/contact',
-      component: ContactView
+      path: '/links',
+      component: LinksView
     }
   ]
 })
