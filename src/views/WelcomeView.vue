@@ -20,7 +20,7 @@ import MaterialIcon from '@/components/MaterialIcon.vue'
       <a
         href="https://drive.google.com/file/d/1qVkxCsOKVhcdN39GXOyfgTEl_Uf3Vc_Y/view?usp=sharing"
         target="_blank"
-        class="h-14 pl-5 pr-6 rounded-[20px] bg-white transition-colors hover:bg-primary text-black font-semibold flex items-center"
+        class="cta-btn h-14 pl-5 pr-6 rounded-[20px] text-black font-semibold flex items-center"
       >
         <MaterialIcon name="open_in_new" class="mr-4 text-black text-xl" />
         View resume
@@ -28,3 +28,16 @@ import MaterialIcon from '@/components/MaterialIcon.vue'
     </div>
   </div>
 </template>
+
+<style>
+.cta-btn {
+  background: linear-gradient(to left, #f2f2f2, #f2f2f2, #64a577, #64a577);
+  background-size: 300% 100%;
+  background-position-x: 100%;
+  transition: background-position-x 300ms ease;
+}
+
+.cta-btn:hover {
+  background-position-x: 0%;
+}
+</style>
