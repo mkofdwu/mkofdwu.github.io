@@ -31,17 +31,20 @@ setInterval(updateTimeUntilORD, 1000)
     <router-link
       to="/"
       class="transition-opacity mr-10 max-sm:mr-6"
-      :class="$route.path === '/' ? 'opacity-100' : 'opacity-60'"
+      :class="$route.path === '/' ? 'opacity-100' : 'opacity-60 hover:opacity-100'"
     >
       about me
     </router-link>
-    <a href="https://mkofdwu.github.io/ctf-writeups/" class="mr-10 max-sm:mr-6 opacity-60">
+    <a
+      href="https://mkofdwu.github.io/ctf-writeups/"
+      class="mr-10 max-sm:mr-6 transition-opacity opacity-60 hover:opacity-100"
+    >
       ctf writeups
     </a>
     <router-link
       to="/links"
       class="transition-opacity"
-      :class="$route.path === '/links' ? 'opacity-100' : 'opacity-60'"
+      :class="$route.path === '/links' ? 'opacity-100' : 'opacity-60 hover:opacity-100'"
     >
       links
     </router-link>
