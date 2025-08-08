@@ -16,7 +16,15 @@ import MaterialIcon from '@/components/MaterialIcon.vue'
         Hi, I'm
         <h1 class="text-primary inline">Jia Jie</h1>
       </h1>
-      <p class="mb-10 max-md:mb-8">I play CTFs (web, pwn, rev and pyjails).</p>
+      <p class="mb-10 max-md:mb-8">
+        I play CTFs (web, pwn, rev and pyjails) with
+        <a
+          href="https://ctftime.org/team/208726"
+          target="_blank"
+          class="underline transition-opacity opacity-60 hover:opacity-100"
+          >slight_smile</a
+        >.
+      </p>
       <a
         href="https://drive.google.com/file/d/1qVkxCsOKVhcdN39GXOyfgTEl_Uf3Vc_Y/view?usp=sharing"
         target="_blank"
